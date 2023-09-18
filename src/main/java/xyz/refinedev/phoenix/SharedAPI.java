@@ -29,6 +29,7 @@ public class SharedAPI {
     private ChatSnapshotHandler chatSnapshotHandler;
     private MetadataHandler metadataHandler;
     private RebootHandler rebootHandler;
+    private FilterHandler filterHandler;
 
     private long startedAt;
     private long stoppedAt;
