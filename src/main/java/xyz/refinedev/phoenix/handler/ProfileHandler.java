@@ -3,6 +3,7 @@ package xyz.refinedev.phoenix.handler;
 import xyz.refinedev.phoenix.profile.Profile;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -30,5 +31,9 @@ public class ProfileHandler {
 
     public UUID getUuidFromName(String name) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public List<Profile> getProfiles() {
+        throw new IllegalPluginAccessException("You need to install the plugin");
     }
 }
