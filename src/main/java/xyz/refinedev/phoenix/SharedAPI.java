@@ -17,7 +17,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SharedAPI {
-
     @Getter
     public static SharedAPI instance;
     private Gson gson;
