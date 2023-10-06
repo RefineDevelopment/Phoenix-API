@@ -55,7 +55,11 @@ public class NetworkHandler {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean isOnline(String name) {
+    public boolean isServerOnline(String name) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public boolean isOnline(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
