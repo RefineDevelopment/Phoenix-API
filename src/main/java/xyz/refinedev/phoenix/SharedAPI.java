@@ -31,6 +31,7 @@ public class SharedAPI {
     private RebootHandler rebootHandler;
     private WhitelistHandler whitelistHandler;
     private FilterHandler filterHandler;
+    private PlaceholderHandler placeholderHandler;
 
     private long startedAt;
     private long stoppedAt;
