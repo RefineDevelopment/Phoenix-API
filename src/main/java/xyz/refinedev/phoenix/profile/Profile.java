@@ -8,7 +8,6 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.profile.cooldown.Cooldown;
 import xyz.refinedev.phoenix.profile.disguise.DisguiseData;
 import xyz.refinedev.phoenix.profile.grant.Grant;
-import xyz.refinedev.phoenix.profile.grant.TagGrant;
 import xyz.refinedev.phoenix.profile.login.Login;
 import xyz.refinedev.phoenix.profile.notes.Note;
 import xyz.refinedev.phoenix.profile.punishment.Punishment;
@@ -173,10 +172,6 @@ public class Profile {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public List<TagGrant> getTagGrants() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
     public void updatePermissions() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
@@ -186,10 +181,6 @@ public class Profile {
     }
 
     public List<Grant> getActiveGrants() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public List<TagGrant> getActiveTagGrants() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -298,10 +289,6 @@ public class Profile {
     }
 
     public List<Grant> getGrantsIssued() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public List<TagGrant> getTagGrantsIssued() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
