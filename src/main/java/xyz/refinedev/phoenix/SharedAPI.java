@@ -28,7 +28,6 @@ public class SharedAPI {
     private NetworkHandler networkHandler;
     private CommandLogHandler commandLogHandler;
     private ChatSnapshotHandler chatSnapshotHandler;
-    private RebootHandler rebootHandler;
     private WhitelistHandler whitelistHandler;
     private FilterHandler filterHandler;
     private PlaceholderHandler placeholderHandler;
