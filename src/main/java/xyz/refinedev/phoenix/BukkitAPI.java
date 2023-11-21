@@ -5,8 +5,14 @@ import xyz.refinedev.phoenix.chat.api.ChatChannelType;
 import xyz.refinedev.phoenix.profile.Profile;
 
 /**
+ * <p>
+ * This Project is property of Refine Development.<br>
+ * Copyright © 2023, All Rights Reserved.<br>
+ * Redistribution of this Project is not allowed.<br>
+ * </p>
+ *
  * @author Creaxx
- * Created At: 2/5/2023
+ * @since 2/5/2023
  */
 public class BukkitAPI {
 

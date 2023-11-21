@@ -4,8 +4,14 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 /**
+ * <p>
+ * This Project is property of Refine Development.<br>
+ * Copyright © 2023, All Rights Reserved.<br>
+ * Redistribution of this Project is not allowed.<br>
+ * </p>
+ *
  * @author Creaxx
- * Created At: 5/16/2023
+ * @since 5/16/2023
  */
 
 @Getter

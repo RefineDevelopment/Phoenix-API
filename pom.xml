@@ -4,9 +4,42 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dev.phoenix</groupId>
+    <name>Phoenix-API</name>
+    <description>The API implementation of the network core Phoenix</description>
+
+    <organization>
+        <name>Refine Development</name>
+        <url>https://dsc.gg/refine</url>
+    </organization>
+
+    <groupId>xyz.refinedev.phoenix</groupId>
     <artifactId>pxAPI</artifactId>
     <version>1.0</version>
+
+    <build>
+        <finalName>pxAPI</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <showWarnings>false</showWarnings>
+                    <showDeprecation>false</showDeprecation>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.26</version>
+                        </path>
+                    </annotationProcessorPaths>
+                    <target>${maven.compiler.target}</target>
+                    <source>${maven.compiler.source}</source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -14,24 +47,26 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>refine-public</id>
+            <url>https://maven.refinedev.xyz/repository/public-repo/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-1.8</artifactId>
-            <version>1.8.8-R3-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/spigot-1.8.8-R0.1-SNAPSHOT-latest (4).jar</systemPath>
+            <groupId>org.paperspigot</groupId>
+            <artifactId>PaperSpigot</artifactId>
+            <version>1.8.8</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>pxAPI</finalName>
-    </build>
 
 </project>

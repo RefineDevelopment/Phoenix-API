@@ -9,17 +9,23 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
+ * <p>
+ * This Project is property of Refine Development.<br>
+ * Copyright © 2023, All Rights Reserved.<br>
+ * Redistribution of this Project is not allowed.<br>
+ * </p>
+ *
  * @author Creaxx
- * Created At: 03/01/2023
- * Project: pxAPI
+ * @since 03/01/2023
+ * @version pxAPI
  */
 
 @Getter
 @Setter
 public class SharedAPI {
 
-    @Getter
-    public static SharedAPI instance;
+    @Getter public static SharedAPI instance;
+
     private Gson gson;
 
     private ProfileHandler profileHandler;
@@ -28,7 +34,6 @@ public class SharedAPI {
     private NetworkHandler networkHandler;
     private CommandLogHandler commandLogHandler;
     private ChatSnapshotHandler chatSnapshotHandler;
-    private RebootHandler rebootHandler;
     private WhitelistHandler whitelistHandler;
     private FilterHandler filterHandler;
     private PlaceholderHandler placeholderHandler;
