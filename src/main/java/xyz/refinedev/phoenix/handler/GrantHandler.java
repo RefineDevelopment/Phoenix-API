@@ -1,14 +1,9 @@
 package xyz.refinedev.phoenix.handler;
 
-import lombok.Getter;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import xyz.refinedev.phoenix.SharedAPI;
 import xyz.refinedev.phoenix.profile.grant.Grant;
 import xyz.refinedev.phoenix.rank.Rank;
-import xyz.refinedev.phoenix.repository.GrantRepository;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 
