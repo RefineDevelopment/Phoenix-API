@@ -14,9 +14,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * <p>
+ * This Project is property of Refine Development.<br>
+ * Copyright © 2023, All Rights Reserved.<br>
+ * Redistribution of this Project is not allowed.<br>
+ * </p>
+ *
  * @author Creaxx
- * Created At: 03/01/2023
- * Project: pxAPI
+ * @since 03/01/2023
+ * @version pxAPI
  */
 
 @Getter

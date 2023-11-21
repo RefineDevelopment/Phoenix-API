@@ -8,8 +8,14 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 import java.util.UUID;
 
 /**
+ * <p>
+ * This Project is property of Refine Development.<br>
+ * Copyright © 2023, All Rights Reserved.<br>
+ * Redistribution of this Project is not allowed.<br>
+ * </p>
+ *
  * @author Creaxx
- * Created At: 27/12/2022
+ * @since 27/12/2022
  * Project: pxCore
  */
 

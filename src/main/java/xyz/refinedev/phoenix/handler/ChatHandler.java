@@ -11,8 +11,14 @@ import java.util.List;
 import java.util.UUID;
 
 /**
+ * <p>
+ * This Project is property of Refine Development.<br>
+ * Copyright © 2023, All Rights Reserved.<br>
+ * Redistribution of this Project is not allowed.<br>
+ * </p>
+ *
  * @author Creaxx
- * Created At: 5/20/2023
+ * @since 5/20/2023
  */
 
 @Getter
