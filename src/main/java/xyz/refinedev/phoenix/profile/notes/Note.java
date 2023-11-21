@@ -27,14 +27,4 @@ public class Note {
     public String getNiceIssuedBy() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
-
-    @Override
-    public int hashCode() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
 }

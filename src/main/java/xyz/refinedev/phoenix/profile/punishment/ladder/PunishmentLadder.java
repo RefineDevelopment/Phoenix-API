@@ -1,59 +1,58 @@
-package xyz.refinedev.phoenix.scope;
+package xyz.refinedev.phoenix.profile.punishment.ladder;
 
-import lombok.Getter;
+import com.google.gson.annotations.SerializedName;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.profile.punishment.Punishment;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
-@Getter
-public class Scope {
-    public static final String SCOPE_REGEX = "g:[A-Za-z]+|s:[A-Za-z]+|global";
-    public static final Scope GLOBAL = new Scope("global");
+/**
+ * @author Creaxx
+ * Created At: 4/1/2023
+ */
 
-    private final String scope;
+public class PunishmentLadder {
 
-    public Scope(String scope) {
+    public PunishmentLadder(String id, String reason, boolean requireChatSnapshot) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public static Scope server(String server) {
+    public List<PunishmentLadderType> getSortedLadders() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public static Scope group(String group) {
+    public PunishmentLadderType getByOrder(int order) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public static List<String> toNiceScopes(List<Scope> scopes) {
+    public int getPunishedTimes(List<Punishment> punishments) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public static List<Scope> of(String s) {
+    public PunishmentLadderType getNextLadder(List<Punishment> punishments) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getDisplayName() {
+    public String getId() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean isGlobal() {
+    public String getReason() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean isServer() {
+    public boolean isRequireChatSnapshot() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean isGroup() {
+    public List<PunishmentLadderType> getLadder() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getServerName() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public String getGroupName() {
+    public void setLadder(List<PunishmentLadderType> ladder) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

@@ -32,6 +32,10 @@ public class SharedAPI {
     private WhitelistHandler whitelistHandler;
     private FilterHandler filterHandler;
     private PlaceholderHandler placeholderHandler;
+    private GrantHandler grantHandler;
+    private PunishmentHandler punishmentHandler;
+    private PunishmentLadderHandler punishmentLadderHandler;
+    private SecurityHandler securityHandler;
 
     private long startedAt;
     private long stoppedAt;

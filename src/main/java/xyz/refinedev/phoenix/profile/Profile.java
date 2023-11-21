@@ -392,18 +392,4 @@ public class Profile {
     public Note getNote(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
-
-    public void postProcess() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    @Override
-    public int hashCode() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
 }

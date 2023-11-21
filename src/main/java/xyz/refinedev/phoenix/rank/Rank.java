@@ -105,14 +105,4 @@ public class Rank {
     public Rank findDependencyLock(Rank rank) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
-
-    @Override
-    public int hashCode() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
 }

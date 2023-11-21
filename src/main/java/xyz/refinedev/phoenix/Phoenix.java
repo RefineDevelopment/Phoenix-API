@@ -27,8 +27,8 @@ public class Phoenix {
     public static Phoenix instance;
 
     private ChatHandler chatHandler;
-
     private RebootHandler rebootHandler;
+    private VisibilityHandler visibilityHandler;
 
     private final List<PlayerSettings> playerSettings = new ArrayList<>();
 }
