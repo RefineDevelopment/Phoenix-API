@@ -1,12 +1,12 @@
 package xyz.refinedev.phoenix;
 
 import com.google.gson.Gson;
+import lombok.Getter;
+import lombok.Setter;
 import xyz.refinedev.phoenix.handler.*;
 import xyz.refinedev.phoenix.hook.ICosmeticsHook;
 import xyz.refinedev.phoenix.hook.ILevelHook;
 import xyz.refinedev.phoenix.hook.IModUtilsHook;
-import lombok.Getter;
-import lombok.Setter;
 
 /**
  * <p>
