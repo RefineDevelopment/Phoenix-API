@@ -58,7 +58,7 @@ Getting a player's highest rank:
 SharedAPI api = SharedAPI.getInstance();
 Profile profile = api.getProfileHandler().getByUuid("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d");
 if (profile != null) {
-    player.sendMessage(profile.getName() + "'s highest rank is " + profile.getBestRank().getName());    
+    player.sendMessage(profile.getName() + "'s highest rank is " + profile.getHighestRank().getName());    
 }
 ```
 
