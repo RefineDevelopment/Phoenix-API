@@ -34,7 +34,7 @@ Add this to your `pom.xml` under `<dependencies>`:
 ```
 
 ## Usage
-To access PhoenixAPI, you can these two methods
+To access PhoenixAPI, you can use these two methods
 
 For global (non-bukkit specific) stuff such as profiles, ranks, punishments, etc... use:
 ```java
