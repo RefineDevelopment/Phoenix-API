@@ -15,6 +15,7 @@ import xyz.refinedev.phoenix.profile.punishment.PunishmentType;
 import xyz.refinedev.phoenix.profile.tag.Tag;
 import xyz.refinedev.phoenix.rank.Rank;
 import xyz.refinedev.phoenix.rank.permission.Permission;
+import xyz.refinedev.phoenix.rank.permission.ProfilePermission;
 
 import java.util.*;
 
@@ -38,7 +39,8 @@ public class Profile {
     private String name;
     private String nameToLowercase;
 
-    private Set<Permission> permissions = new HashSet<>();
+    @SerializedName("profilePermissions")
+    private Set<ProfilePermission> permissions = new HashSet<>();
     private Set<String> attachmentPermissions = new HashSet<>();
     private List<UUID> ignoring = new ArrayList<>();
     private List<Cooldown> globalCooldowns = new ArrayList<>();
@@ -361,7 +363,7 @@ public class Profile {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public Permission getPermission(String perm) {
+    public ProfilePermission getPermission(String perm) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 

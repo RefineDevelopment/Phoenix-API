@@ -1,12 +1,12 @@
 package xyz.refinedev.phoenix;
 
 import com.google.gson.Gson;
+import lombok.Getter;
+import lombok.Setter;
 import xyz.refinedev.phoenix.handler.*;
 import xyz.refinedev.phoenix.hook.ICosmeticsHook;
 import xyz.refinedev.phoenix.hook.ILevelHook;
 import xyz.refinedev.phoenix.hook.IModUtilsHook;
-import lombok.Getter;
-import lombok.Setter;
 
 /**
  * <p>
@@ -16,15 +16,16 @@ import lombok.Setter;
  * </p>
  *
  * @author Creaxx
- * @since 03/01/2023
  * @version pxAPI
+ * @since 03/01/2023
  */
 
 @Getter
 @Setter
 public class SharedAPI {
 
-    @Getter public static SharedAPI instance;
+    @Getter
+    public static SharedAPI instance;
 
     private Gson gson;
 
