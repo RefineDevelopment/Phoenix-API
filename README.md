@@ -56,7 +56,7 @@ Example usage of PhoenixAPI
 Getting a player's highest rank:
 ```java
 SharedAPI api = SharedAPI.getInstance();
-Profile profile = api.getProfileHandler().getByUuid("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d");
+Profile profile = api.getProfileHandler().getProfile("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d");
 if (profile != null) {
     player.sendMessage(profile.getName() + "'s highest rank is " + profile.getHighestRank().getName());    
 }

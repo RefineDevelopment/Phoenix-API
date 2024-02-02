@@ -42,6 +42,7 @@ public class SharedAPI {
     private PunishmentHandler punishmentHandler;
     private PunishmentLadderHandler punishmentLadderHandler;
     private SecurityHandler securityHandler;
+    private CooldownHandler cooldownHandler;
 
     private long startedAt;
     private long stoppedAt;
