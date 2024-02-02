@@ -10,7 +10,6 @@ import org.bukkit.plugin.IllegalPluginAccessException;
  * Redistribution of this project is not allowed.
  */
 public class RebootHandler {
-
     public long getTimeRemaining() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }

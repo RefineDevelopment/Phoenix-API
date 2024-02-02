@@ -2,9 +2,11 @@ package xyz.refinedev.phoenix;
 
 import lombok.Getter;
 import lombok.Setter;
+import xyz.refinedev.phoenix.handler.AuthHandler;
 import xyz.refinedev.phoenix.handler.ChatHandler;
 import xyz.refinedev.phoenix.handler.RebootHandler;
 import xyz.refinedev.phoenix.handler.VisibilityHandler;
+import xyz.refinedev.phoenix.menu.api.MenuHandler;
 import xyz.refinedev.phoenix.settings.api.PlayerSettings;
 
 import java.util.ArrayList;
@@ -32,6 +34,8 @@ public class Phoenix {
     private ChatHandler chatHandler;
     private RebootHandler rebootHandler;
     private VisibilityHandler visibilityHandler;
+    private AuthHandler authHandler;
+    private MenuHandler menuHandler;
 
     private final List<PlayerSettings> playerSettings = new ArrayList<>();
 }

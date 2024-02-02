@@ -1,42 +1,40 @@
-package xyz.refinedev.phoenix.handler;
+package xyz.refinedev.phoenix.profile.disguise;
 
-import lombok.Getter;
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import xyz.refinedev.phoenix.visibility.IVisibilityAdapter;
 
-import java.util.*;
+import java.util.UUID;
 
 /**
+ * This Project is the property of Refine Development © 2023
+ * Redistribution of this Project is not allowed
+ *
  * @author Creaxx
- * Created At: 5/31/2023
+ * Created At: 07/12/2022
+ * Project: Phoenix
  */
 
-@Getter
-public class VisibilityHandler {
-
-    public void addAdapter(IVisibilityAdapter adapter) {
+public class DisguiseHistory {
+    public UUID getId() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean canSee(UUID viewer, UUID target) {
+    public long getDate() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean canSee(Player viewer, Player target) {
+    public UUID getPlayer() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public Set<Player> getAllVisibleTo(Player player) {
+    public UUID getRankId() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public Set<String> getAllVisibleToNames(Player player) {
+    public String getName() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public Set<Player> getAllInvisibleTo(Player player) {
+    public Skin getSkin() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }
