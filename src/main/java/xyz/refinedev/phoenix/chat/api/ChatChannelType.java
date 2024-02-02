@@ -25,4 +25,12 @@ public abstract class ChatChannelType {
     public abstract String getFormat();
 
     public abstract boolean acceptRecipient(Player player, Player other);
+
+    public boolean isStaff() {
+        return false;
+    }
+
+    public String getQuickAccessPrefix() {
+        return null;
+    }
 }
