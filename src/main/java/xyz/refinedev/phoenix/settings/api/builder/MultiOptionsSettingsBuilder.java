@@ -4,6 +4,7 @@ import xyz.refinedev.phoenix.menu.api.Button;
 import org.bukkit.Material;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -27,6 +28,9 @@ public class MultiOptionsSettingsBuilder {
     private String permission = "";
     private String overrideValue;
     private Runnable afterAction = null;
+    private boolean useOverrideLore = false;
+    private List<String> overrideLore = new ArrayList<>();
+    private List<String> overrideNoPermissionLore = new ArrayList<>();
 
     public MultiOptionsSettingsBuilder titleOf(String title) {
         this.title = title;
@@ -75,6 +79,21 @@ public class MultiOptionsSettingsBuilder {
 
     public MultiOptionsSettingsBuilder overrideValueOf(String overrideValue) {
         this.overrideValue = overrideValue;
+        return this;
+    }
+
+    public MultiOptionsSettingsBuilder overrideLoreOf(List<String> overrideLore) {
+        this.overrideLore = overrideLore;
+        return this;
+    }
+
+    public MultiOptionsSettingsBuilder overrideNoPermissionLoreOf(List<String> overrideNoPermissionLore) {
+        this.overrideNoPermissionLore = overrideNoPermissionLore;
+        return this;
+    }
+
+    public MultiOptionsSettingsBuilder useOverrideLoreOf(boolean useOverrideLore) {
+        this.useOverrideLore = useOverrideLore;
         return this;
     }
 

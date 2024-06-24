@@ -5,6 +5,7 @@ import lombok.Getter;
 import org.bukkit.Material;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -30,6 +31,9 @@ public final class IntegerSettingsBuilder {
     private int defaultValue = 0;
     private String overrideValue;
     private Runnable afterAction = null;
+    private boolean useOverrideLore = false;
+    private List<String> overrideLore = new ArrayList<>();
+    private List<String> overrideNoPermissionLore = new ArrayList<>();
 
     public IntegerSettingsBuilder titleOf(String title) {
         this.title = title;
@@ -80,6 +84,22 @@ public final class IntegerSettingsBuilder {
         this.overrideValue = overrideValue;
         return this;
     }
+
+    public IntegerSettingsBuilder overrideLoreOf(List<String> overrideLore) {
+        this.overrideLore = overrideLore;
+        return this;
+    }
+
+    public IntegerSettingsBuilder overrideNoPermissionLoreOf(List<String> overrideNoPermissionLore) {
+        this.overrideNoPermissionLore = overrideNoPermissionLore;
+        return this;
+    }
+
+    public IntegerSettingsBuilder useOverrideLoreOf(boolean useOverrideLore) {
+        this.useOverrideLore = useOverrideLore;
+        return this;
+    }
+
 
     public Button asButton() {
         throw new IllegalPluginAccessException("You need to install the plugin.");

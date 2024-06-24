@@ -5,6 +5,7 @@ import lombok.Getter;
 import org.bukkit.Material;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -29,6 +30,10 @@ public final class BooleanSettingsBuilder {
     private boolean defaultValue = true;
     private String overrideValue;
     private Runnable afterAction = null;
+    private boolean useOverrideLore = false;
+    private List<String> overrideEnabledLore = new ArrayList<>();
+    private List<String> overrideDisabledLore = new ArrayList<>();
+    private List<String> overrideNoPermissionLore = new ArrayList<>();
 
     public BooleanSettingsBuilder titleOf(String title) {
         this.title = title;
@@ -72,6 +77,26 @@ public final class BooleanSettingsBuilder {
 
     public BooleanSettingsBuilder overrideValueOf(String overrideValue) {
         this.overrideValue = overrideValue;
+        return this;
+    }
+
+    public BooleanSettingsBuilder overrideEnabledLoreOf(List<String> overrideEnabledLore) {
+        this.overrideEnabledLore = overrideEnabledLore;
+        return this;
+    }
+
+    public BooleanSettingsBuilder overrideDisabledLoreOf(List<String> overrideDisabledLore) {
+        this.overrideDisabledLore = overrideDisabledLore;
+        return this;
+    }
+
+    public BooleanSettingsBuilder overrideNoPermissionLoreOf(List<String> overrideNoPermissionLore) {
+        this.overrideNoPermissionLore = overrideNoPermissionLore;
+        return this;
+    }
+
+    public BooleanSettingsBuilder useOverrideLoreOf(boolean useOverrideLore) {
+        this.useOverrideLore = useOverrideLore;
         return this;
     }
 
