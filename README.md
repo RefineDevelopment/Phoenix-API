@@ -28,7 +28,7 @@ Add this to your `pom.xml` under `<dependencies>`:
 <dependency>
     <groupId>xyz.refinedev.phoenix</groupId>
     <artifactId>pxAPI</artifactId>
-    <version>1.0</version>
+    <version>1.7</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Example usage of PhoenixAPI
 Getting a player's highest rank:
 ```java
 SharedAPI api = SharedAPI.getInstance();
-Profile profile = api.getProfileHandler().getProfile("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d");
+Profile profile = api.getProfileHandler().getProfile(UUID.fromString("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d"));
 if (profile != null) {
     player.sendMessage(profile.getName() + "'s highest rank is " + profile.getHighestRank().getName());    
 }
@@ -65,7 +65,7 @@ if (profile != null) {
 Obtaining a information about a player in Queue:
 ```java
 QueueAPI qApi = QueueAPI.INSTANCE;
-Queue queue = qApi.getPlayerQueue("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d");
+Queue queue = qApi.getPlayerQueue(UUID.fromString("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d"));
 if (queue != null) {
     player.sendMessage("Player is currently queued for " + queue.getName());
     return;
