@@ -3,7 +3,6 @@ package xyz.refinedev.phoenix.profile.notes;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import xyz.refinedev.phoenix.SharedAPI;
 
 import java.util.UUID;
 

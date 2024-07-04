@@ -1,12 +1,12 @@
 package xyz.refinedev.phoenix.utils.events;
 
-import xyz.refinedev.phoenix.profile.Profile;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import xyz.refinedev.phoenix.profile.Profile;
 
 /**
  * Event called whenever a profile tries to report someone

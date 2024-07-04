@@ -1,12 +1,12 @@
 package xyz.refinedev.phoenix.handler;
 
 import lombok.Getter;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.visibility.IVisibilityAdapter;
 
-import java.util.*;
+import java.util.Set;
+import java.util.UUID;
 
 /**
  * @author Creaxx

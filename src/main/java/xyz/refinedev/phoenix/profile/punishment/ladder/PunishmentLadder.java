@@ -1,13 +1,9 @@
 package xyz.refinedev.phoenix.profile.punishment.ladder;
 
-import com.google.gson.annotations.SerializedName;
 import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.profile.punishment.Punishment;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author Creaxx

@@ -14,7 +14,6 @@ import xyz.refinedev.phoenix.profile.punishment.Punishment;
 import xyz.refinedev.phoenix.profile.punishment.PunishmentType;
 import xyz.refinedev.phoenix.profile.tag.Tag;
 import xyz.refinedev.phoenix.rank.Rank;
-import xyz.refinedev.phoenix.rank.permission.Permission;
 import xyz.refinedev.phoenix.rank.permission.ProfilePermission;
 
 import java.util.*;
@@ -57,8 +56,6 @@ public class Profile {
     private String authType = null;
     private boolean twoFactor = false;
     private String secretKey = "";
-
-    private List<Login> logins = new ArrayList<>();
 
     private Map<String, String> metadata = new HashMap<>();
 
@@ -222,19 +219,23 @@ public class Profile {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getFirstLogin() {
+    public String getFirstLogin(List<Login> logins) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getLastLogin() {
+    public String getLastLogin(List<Login> logins) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public Login getMostRecentLogin() {
+    public Login getMostRecentLogin(List<Login> logins) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getLastSeenAgo() {
+    public String getLastSeenAgo(List<Login> logins) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public long getPlayTime(List<Login> logins) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 

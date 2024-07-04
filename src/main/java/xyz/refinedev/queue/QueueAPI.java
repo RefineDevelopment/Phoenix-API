@@ -1,7 +1,7 @@
 package xyz.refinedev.queue;
 
-import xyz.refinedev.queue.queue.impl.Queue;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.queue.queue.impl.Queue;
 
 import java.util.UUID;
 

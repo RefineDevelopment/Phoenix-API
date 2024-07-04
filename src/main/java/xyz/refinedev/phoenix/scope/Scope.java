@@ -3,7 +3,6 @@ package xyz.refinedev.phoenix.scope;
 import lombok.Getter;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Getter

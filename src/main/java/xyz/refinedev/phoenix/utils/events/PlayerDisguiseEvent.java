@@ -1,9 +1,9 @@
 package xyz.refinedev.phoenix.utils.events;
 
-import xyz.refinedev.phoenix.profile.Profile;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import xyz.refinedev.phoenix.profile.Profile;
 
 import java.beans.ConstructorProperties;
 

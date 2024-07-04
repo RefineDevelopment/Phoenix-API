@@ -3,10 +3,13 @@ package xyz.refinedev.phoenix;
 import com.google.gson.Gson;
 import lombok.Getter;
 import lombok.Setter;
+import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.handler.*;
 import xyz.refinedev.phoenix.hook.ICosmeticsHook;
 import xyz.refinedev.phoenix.hook.ILevelHook;
 import xyz.refinedev.phoenix.hook.IModUtilsHook;
+
+import java.util.logging.Logger;
 
 /**
  * <p>
@@ -26,8 +29,8 @@ public class SharedAPI {
 
     @Getter
     public static SharedAPI instance;
-
     private Gson gson;
+    private Logger logger;
 
     private ProfileHandler profileHandler;
     private RankHandler rankHandler;
@@ -43,6 +46,7 @@ public class SharedAPI {
     private PunishmentLadderHandler punishmentLadderHandler;
     private SecurityHandler securityHandler;
     private CooldownHandler cooldownHandler;
+    private LoginHandler loginHandler;
 
     private long startedAt;
     private long stoppedAt;
@@ -50,4 +54,12 @@ public class SharedAPI {
     private IModUtilsHook modUtilsHook;
     private ILevelHook levelHook;
     private ICosmeticsHook cosmeticsHook;
+
+    public void enable(Logger logger) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public void disable() {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
 }

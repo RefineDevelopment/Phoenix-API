@@ -1,8 +1,8 @@
 package xyz.refinedev.phoenix.settings.api;
 
-import xyz.refinedev.phoenix.menu.api.Button;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.menu.api.Button;
 
 import java.util.Collections;
 import java.util.List;

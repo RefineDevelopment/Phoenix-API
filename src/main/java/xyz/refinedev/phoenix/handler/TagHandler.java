@@ -1,10 +1,10 @@
 package xyz.refinedev.phoenix.handler;
 
-import xyz.refinedev.phoenix.profile.tag.Tag;
-import xyz.refinedev.phoenix.profile.tag.TagCategory;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.profile.tag.Tag;
+import xyz.refinedev.phoenix.profile.tag.TagCategory;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package xyz.refinedev.phoenix.handler;
 
-import xyz.refinedev.phoenix.profile.Profile;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.profile.Profile;
 
 import java.util.UUID;
 

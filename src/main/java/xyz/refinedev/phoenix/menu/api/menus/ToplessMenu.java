@@ -5,7 +5,6 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.menu.api.Button;
 import xyz.refinedev.phoenix.menu.api.Menu;
 
-import java.util.HashMap;
 import java.util.Map;
 
 //LIKE DRIZZYS PICKS

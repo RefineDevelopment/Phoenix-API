@@ -1,6 +1,5 @@
 package xyz.refinedev.queue.queue;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.bukkit.plugin.IllegalPluginAccessException;
 

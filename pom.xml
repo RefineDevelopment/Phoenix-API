@@ -16,31 +16,6 @@
     <artifactId>pxAPI</artifactId>
     <version>1.0</version>
 
-    <build>
-        <finalName>pxAPI</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <showWarnings>false</showWarnings>
-                    <showDeprecation>false</showDeprecation>
-                    <useIncrementalCompilation>false</useIncrementalCompilation>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.26</version>
-                        </path>
-                    </annotationProcessorPaths>
-                    <target>${maven.compiler.target}</target>
-                    <source>${maven.compiler.source}</source>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -69,4 +44,29 @@
         </dependency>
     </dependencies>
 
+
+    <build>
+        <finalName>pxAPI</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <showWarnings>false</showWarnings>
+                    <showDeprecation>false</showDeprecation>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.26</version>
+                        </path>
+                    </annotationProcessorPaths>
+                    <target>${maven.compiler.target}</target>
+                    <source>${maven.compiler.source}</source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

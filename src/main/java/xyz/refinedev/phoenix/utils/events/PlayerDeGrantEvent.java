@@ -1,13 +1,13 @@
 package xyz.refinedev.phoenix.utils.events;
 
-import xyz.refinedev.phoenix.profile.Profile;
-import xyz.refinedev.phoenix.profile.grant.Grant;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import xyz.refinedev.phoenix.profile.Profile;
+import xyz.refinedev.phoenix.profile.grant.Grant;
 
 /**
  * Event called whenever player or console tries to grant rank to a player

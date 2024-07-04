@@ -1,9 +1,9 @@
 package xyz.refinedev.phoenix.settings.api.builder;
 
-import xyz.refinedev.phoenix.menu.api.Button;
 import lombok.Getter;
 import org.bukkit.Material;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.menu.api.Button;
 
 import java.util.ArrayList;
 import java.util.Arrays;

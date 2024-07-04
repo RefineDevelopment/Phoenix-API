@@ -1,10 +1,10 @@
 package xyz.refinedev.phoenix.utils.events;
 
-import xyz.refinedev.phoenix.profile.punishment.Punishment;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import xyz.refinedev.phoenix.profile.punishment.Punishment;
 
 @RequiredArgsConstructor
 @Getter

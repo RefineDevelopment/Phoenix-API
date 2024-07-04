@@ -1,9 +1,9 @@
 package xyz.refinedev.queue.queue.impl;
 
-import xyz.refinedev.queue.queue.QueuePlayer;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.queue.queue.QueuePlayer;
 
 import java.util.PriorityQueue;
 import java.util.UUID;

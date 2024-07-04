@@ -1,9 +1,9 @@
 package xyz.refinedev.phoenix.profile.punishment;
 
-import xyz.refinedev.phoenix.profile.log.Logable;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.profile.log.Logable;
 
 /**
  * This Project is the property of Phoenix Development © 2022

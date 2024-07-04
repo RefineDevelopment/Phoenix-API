@@ -4,11 +4,7 @@ import lombok.Getter;
 import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.placeholder.PlaceholderAdapter;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * <p>

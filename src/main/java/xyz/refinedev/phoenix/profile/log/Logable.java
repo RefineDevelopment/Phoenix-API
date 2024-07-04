@@ -1,9 +1,9 @@
 package xyz.refinedev.phoenix.profile.log;
 
-import xyz.refinedev.phoenix.utils.Expirable;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.utils.Expirable;
 
 import java.util.UUID;
 
