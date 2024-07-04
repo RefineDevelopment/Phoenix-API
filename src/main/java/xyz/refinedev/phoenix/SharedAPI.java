@@ -8,6 +8,7 @@ import xyz.refinedev.phoenix.handler.*;
 import xyz.refinedev.phoenix.hook.ICosmeticsHook;
 import xyz.refinedev.phoenix.hook.ILevelHook;
 import xyz.refinedev.phoenix.hook.IModUtilsHook;
+import xyz.refinedev.phoenix.utils.ExecuteOnMainThread;
 
 import java.util.logging.Logger;
 
@@ -54,6 +55,8 @@ public class SharedAPI {
     private IModUtilsHook modUtilsHook;
     private ILevelHook levelHook;
     private ICosmeticsHook cosmeticsHook;
+
+    private ExecuteOnMainThread executeOnMainThread;
 
     public void enable(Logger logger) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
