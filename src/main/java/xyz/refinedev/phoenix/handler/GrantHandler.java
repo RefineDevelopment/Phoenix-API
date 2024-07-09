@@ -1,8 +1,11 @@
 package xyz.refinedev.phoenix.handler;
 
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.packet.api.PacketHandler;
+import xyz.refinedev.phoenix.profile.Profile;
 import xyz.refinedev.phoenix.profile.grant.Grant;
 import xyz.refinedev.phoenix.rank.Rank;
+import xyz.refinedev.phoenix.scope.Scope;
 
 import java.util.List;
 import java.util.UUID;
@@ -18,6 +21,14 @@ import java.util.UUID;
 
 public class GrantHandler {
 
+    public void grant(UUID sender, Profile target, long duration, boolean permanent, String reason, Rank rank, List<Scope> scopes) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public void ungrant(UUID sender, Profile target, Grant grant, String reason) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+    
     public Rank getGeneralRank(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }

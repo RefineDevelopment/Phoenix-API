@@ -1,6 +1,7 @@
 package xyz.refinedev.phoenix.handler;
 
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.packet.api.PacketHandler;
 import xyz.refinedev.phoenix.profile.punishment.Punishment;
 import xyz.refinedev.phoenix.profile.punishment.PunishmentType;
 
@@ -23,6 +24,14 @@ public class PunishmentHandler {
     }
 
     public List<Punishment> getPunishments(UUID uuid, PunishmentType type) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public void executePunishment(Punishment punishment) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    public void executeRevokePunishment(Punishment punishment) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 

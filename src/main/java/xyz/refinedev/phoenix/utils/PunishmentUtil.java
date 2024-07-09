@@ -24,15 +24,11 @@ public class PunishmentUtil {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public void execute(CommandSender sender, Punishment punishment) {
+    public void executePunishment(CommandSender sender, Punishment punishment) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public void executeAsync(CommandSender sender, Punishment punishment) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public void executeUnpunish(CommandSender sender, Punishment punishment) {
+    public void executeRevokePunishment(CommandSender sender, Punishment punishment) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
