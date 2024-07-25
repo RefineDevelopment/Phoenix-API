@@ -1,4 +1,4 @@
-# Phoenix-API (Version: 1.7.2)
+# Phoenix-API (Version: 1.7.4)
 This is the API for Phoenix & pxQueue!
 
 ## Installing
