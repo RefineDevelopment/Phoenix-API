@@ -1,25 +1,24 @@
 package xyz.refinedev.phoenix.profile.filter;
 
+import com.google.gson.annotations.SerializedName;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
+@Setter
+@Getter
+@RequiredArgsConstructor
 public class Filter {
-    public String getName() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
 
-    public String getFilter() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
+    @SerializedName("_id")
+    private final String name;
+    private final String filter;
 
-    public FilterType getFilterType() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
+    private FilterType filterType;
+    private boolean hard;
 
-    public boolean isHard() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public void setHard(boolean hard) {
+    public Filter(String name, String filter, FilterType filterType) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

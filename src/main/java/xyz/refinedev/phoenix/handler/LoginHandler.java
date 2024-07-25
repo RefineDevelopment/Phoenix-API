@@ -21,31 +21,77 @@ import java.util.concurrent.CompletableFuture;
 
 @Getter
 public class LoginHandler {
+    /**
+     * Update Logins for a Profile
+     *
+     * @param uuid {@link UUID} Profile UUID
+     */
     public void updateLogins(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Update Logins for a Profile Async
+     *
+     * @param uuid {@link UUID} Profile UUID
+     */
     public CompletableFuture<List<Login>> updateLoginsAsync(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Get the Logins for these UUIDs
+     *
+     * @param uuids {@link Set<UUID>}
+     * @return Login Map By UUID
+     */
     public Map<UUID, List<Login>> getLoginsSync(Set<UUID> uuids) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Get the Logins for a Profile
+     *
+     * @param uuid {@link UUID} Profile UUID
+     * @return {@link List<Login>}
+     */
     public List<Login> getLogins(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Mark a Profile's previous Login as Logged Out
+     *
+     * @param uuid {@link UUID} Profile UUID
+     * @return {@link CompletableFuture}
+     */
     public CompletableFuture<Void> markPreviousAsLoggedOut(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
-
+    /**
+     * Logout a list of Profiles
+     *
+     * @param uuids {@link List<UUID>} Profile UUIDs
+     */
     public void logoutPlayers(List<UUID> uuids) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Logout a Profile Async
+     *
+     * @param uuid {@link UUID} Profile UUID
+     */
     public void logoutPlayer(UUID uuid) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    /**
+     * Logout a Profile
+     *
+     * @param uuid {@link UUID} Profile UUID
+     */
+    public void logoutPlayerSync(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

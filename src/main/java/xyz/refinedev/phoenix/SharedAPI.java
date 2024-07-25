@@ -48,6 +48,8 @@ public class SharedAPI {
     private SecurityHandler securityHandler;
     private CooldownHandler cooldownHandler;
     private LoginHandler loginHandler;
+    private NotificationHandler notificationHandler;
+    private HashHandler hashHandler;
 
     private long startedAt;
     private long stoppedAt;
@@ -58,10 +60,20 @@ public class SharedAPI {
 
     private ExecuteOnMainThread executeOnMainThread;
 
-    public void enable(Logger logger) {
+    /**
+     * Enable the {@link SharedAPI} with a {@link Logger}
+     * of your choice
+     *
+     * @param logger {@link Logger}
+     * @return {@link Boolean} Enabled
+     */
+    public boolean enable(Logger logger) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Disable the {@link SharedAPI}
+     */
     public void disable() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }

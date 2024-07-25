@@ -3,6 +3,8 @@ package xyz.refinedev.phoenix.server;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import xyz.refinedev.phoenix.rank.Rank;
 import xyz.refinedev.phoenix.whitelist.WhitelistAccess;
 
@@ -28,7 +30,21 @@ public class WhitelistInfo {
     private final UUID rankId;
     private final List<String> uuids;
 
-    public Rank getRank() {
+    /**
+     * Get the whitelist {@link Rank}
+     *
+     * @return {@link Rank} Rank
+     */
+    public @Nullable Rank getRank() {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    /**
+     * Get the enabled {@link WhitelistAccess} Types
+     *
+     * @return {@link List<String>} Access Types
+     */
+    public @NotNull List<String> getNiceAccessTypes() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 

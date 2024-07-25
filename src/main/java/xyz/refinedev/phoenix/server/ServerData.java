@@ -34,10 +34,20 @@ public class ServerData {
     private List<UUID> onlinePlayers = new ArrayList<>();
     private HashMap<String, String> metaData = new HashMap<>();
 
+    /**
+     * Is the {@link ServerData} whitelisted?
+     *
+     * @return {@link Boolean} Whitelisted
+     */
     public boolean isWhitelisted() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Is the {@link ServerData} online?
+     *
+     * @return {@link Boolean} Online
+     */
     public boolean isOnline() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }

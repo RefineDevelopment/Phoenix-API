@@ -7,14 +7,8 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 import java.util.UUID;
 
 /**
- * <p>
- * This Project is property of Refine Development.<br>
- * Copyright © 2023, All Rights Reserved.<br>
- * Redistribution of this Project is not allowed.<br>
- * </p>
- *
  * @author Creaxx
- * @since 3/26/2023
+ * Created At: 3/26/2023
  */
 
 @Getter
@@ -25,6 +19,11 @@ public class ChatEntry {
     private final long time = System.currentTimeMillis();
     private final String message;
 
+    /**
+     * Get the formatted Time of the Entry
+     *
+     * @return {@link String}
+     */
     public String getNiceTime() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }

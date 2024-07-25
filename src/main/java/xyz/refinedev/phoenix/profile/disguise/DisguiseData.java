@@ -3,16 +3,17 @@ package xyz.refinedev.phoenix.profile.disguise;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.profile.Profile;
 
 import java.util.UUID;
 
 /**
- * This Project is the property of Phoenix Development © 2022
+ * This Project is the property of Refine Development © 2023
  * Redistribution of this Project is not allowed
  *
  * @author Creaxx
- * @since 07/12/2022
- * Project: pxCore
+ * Created At: 07/12/2022
+ * Project: Phoenix
  */
 
 @Getter
@@ -26,10 +27,20 @@ public class DisguiseData {
     private Skin realSkin;
     private Skin disguiseSkin;
 
+    /**
+     * Is the {@link Profile} Rank Disguised
+     *
+     * @return {@link Boolean}
+     */
     public boolean isRankDisguised() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Is the {@link Profile} Disguised
+     *
+     * @return {@link Boolean}
+     */
     public boolean isDisguised() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }

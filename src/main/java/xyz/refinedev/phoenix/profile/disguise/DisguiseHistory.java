@@ -1,6 +1,9 @@
 package xyz.refinedev.phoenix.profile.disguise;
 
-import org.bukkit.plugin.IllegalPluginAccessException;
+import com.google.gson.annotations.SerializedName;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.util.UUID;
 
@@ -13,28 +16,18 @@ import java.util.UUID;
  * Project: Phoenix
  */
 
+@Getter
+@Setter
+@RequiredArgsConstructor
 public class DisguiseHistory {
-    public UUID getId() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
+    @SerializedName("_id")
+    private final UUID id = UUID.randomUUID();
 
-    public long getDate() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
+    private final long date = System.currentTimeMillis();
 
-    public UUID getPlayer() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
+    private final UUID player;
 
-    public UUID getRankId() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public String getName() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public Skin getSkin() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
+    private final UUID rankId;
+    private final String name;
+    private final Skin skin;
 }

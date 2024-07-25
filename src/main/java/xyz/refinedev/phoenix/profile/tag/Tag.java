@@ -11,26 +11,18 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 public class Tag {
     private final String name;
 
-    private String prefix = "";
-    private String color = "&f";
-    private int weight = 0;
-    private int price = 800;
-    private boolean purchasable = true;
+    private String prefix;
+    private String color;
+    private int priority;
+    private int price;
+    private boolean purchasable;
 
-    public void save() {
+    /**
+     * Get the Displayname of the {@link Tag}
+     *
+     * @return {@link String} Display Name
+     */
+    public String getDisplayName() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
-
-    public void load() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public void delete() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public String getPermission() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
 }

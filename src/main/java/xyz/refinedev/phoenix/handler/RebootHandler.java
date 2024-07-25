@@ -1,20 +1,51 @@
 package xyz.refinedev.phoenix.handler;
 
+import lombok.RequiredArgsConstructor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
 /**
- * @author _lightspark_
- * @since 8/16/2023
- * Project: Phoenix-API @ xyz.refinedev.phoenix.handler
- * <p>
- * Redistribution of this project is not allowed.
+ * @author Creaxx
+ * Created At: 5/2/2023
  */
+
+@RequiredArgsConstructor
 public class RebootHandler {
+    /**
+     * Reboot the server
+     *
+     * @param sender {@link CommandSender} Sender
+     * @param millis {@link Long} Milliseconds
+     */
+    public void reboot(CommandSender sender, long millis) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    /**
+     * Cancel a reboot
+     *
+     * @param sender {@link CommandSender} Sender
+     */
+    public void cancel(CommandSender sender) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    /**
+     * Get the Remaining time for a Reboot
+     *
+     * @return {@link Long} Remaining
+     */
     public long getTimeRemaining() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Is a Reboot scheduled?
+     *
+     * @return {@link Boolean} Scheduled
+     */
     public boolean isRebootScheduled() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
+
 }

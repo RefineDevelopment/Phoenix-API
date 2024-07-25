@@ -2,10 +2,7 @@ package xyz.refinedev.phoenix;
 
 import lombok.Getter;
 import lombok.Setter;
-import xyz.refinedev.phoenix.handler.AuthHandler;
-import xyz.refinedev.phoenix.handler.ChatHandler;
-import xyz.refinedev.phoenix.handler.RebootHandler;
-import xyz.refinedev.phoenix.handler.VisibilityHandler;
+import xyz.refinedev.phoenix.handler.*;
 import xyz.refinedev.phoenix.menu.api.MenuHandler;
 import xyz.refinedev.phoenix.settings.api.PlayerSettings;
 
@@ -36,6 +33,7 @@ public class Phoenix {
     private VisibilityHandler visibilityHandler;
     private AuthHandler authHandler;
     private MenuHandler menuHandler;
+    private DiscordHandler discordHandler;
 
     private final List<PlayerSettings> playerSettings = new ArrayList<>();
 }

@@ -1,8 +1,9 @@
-package xyz.refinedev.phoenix.profile.notes;
+package xyz.refinedev.phoenix.profile.punishment;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
@@ -15,20 +16,19 @@ import java.util.UUID;
  */
 
 @Getter
-@Setter
-public class Note {
+@AllArgsConstructor
+public class Proof {
 
-    private UUID uuid = UUID.randomUUID();
-    private UUID issuedBy;
-    private long issuedAt;
-    private String note;
+    private ProofType type;
+    private String proof;
+    private UUID addedBy;
 
     /**
      * Get the Colored Name of the Issuer
      *
      * @return {@link String} Colored Name
      */
-    public String getNiceIssuedBy() {
+    public @NotNull String getNiceAddedBy() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

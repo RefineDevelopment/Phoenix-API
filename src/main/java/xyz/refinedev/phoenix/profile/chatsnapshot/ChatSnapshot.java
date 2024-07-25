@@ -9,14 +9,8 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * <p>
- * This Project is property of Refine Development.<br>
- * Copyright © 2023, All Rights Reserved.<br>
- * Redistribution of this Project is not allowed.<br>
- * </p>
- *
  * @author Creaxx
- * @since 3/26/2023
+ * Created At: 3/26/2023
  */
 
 @Getter
@@ -33,12 +27,22 @@ public class ChatSnapshot {
 
     private final long createdOn = System.currentTimeMillis();
 
-    public static String getRandomSaltedString(int size) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
+    /**
+     * Get the formatted Created Date
+     *
+     * @return {@link String} Formatted Date
+     */
     public String getNiceCreatedOn() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Get a random String
+     *
+     * @param size {@link Integer} String Length
+     * @return {@link String}
+     */
+    public static String getRandomSaltedString(int size) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
 }

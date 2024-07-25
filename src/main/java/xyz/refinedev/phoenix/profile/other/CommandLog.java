@@ -7,14 +7,8 @@ import lombok.RequiredArgsConstructor;
 import java.util.UUID;
 
 /**
- * <p>
- * This Project is property of Refine Development.<br>
- * Copyright © 2023, All Rights Reserved.<br>
- * Redistribution of this Project is not allowed.<br>
- * </p>
- *
  * @author Creaxx
- * @since 2/1/2023
+ * Created At: 2/1/2023
  */
 
 @Getter
@@ -27,5 +21,4 @@ public class CommandLog {
     private final String command;
     private final String server;
     private final long issuedOn = System.currentTimeMillis();
-
 }

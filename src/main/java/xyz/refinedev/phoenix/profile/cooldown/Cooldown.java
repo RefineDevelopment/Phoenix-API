@@ -2,46 +2,68 @@ package xyz.refinedev.phoenix.profile.cooldown;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.bukkit.plugin.IllegalPluginAccessException;
 
 /**
- * This Project is the property of Phoenix Development © 2022
+ * This Project is the property of Refine Development © 2023
  * Redistribution of this Project is not allowed
  *
  * @author Creaxx
- * @since 07/12/2022
- * Project: pxCore
+ * Created At: 07/12/2022
+ * Project: Phoenix
  */
 
 @Getter
 @Setter
 public class Cooldown {
-
-    private long start = System.currentTimeMillis();
+    private long start;
     private long expire;
     private String name;
 
     public Cooldown(long ms, String name) {
-        this.expire = this.start + ms;
-        this.name = name;
+        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Get the MS passed since the creation of the {@link Cooldown}
+     *
+     * @return {@link Long}
+     */
     public long getPassed() {
-        return System.currentTimeMillis() - this.start;
+        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Get the MS remaining of the {@link Cooldown}
+     *
+     * @return {@link Long}
+     */
     public long getRemaining() {
-        return this.expire - System.currentTimeMillis();
+        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Has the {@link Cooldown} expired?
+     *
+     * @return {@link Boolean} Expired
+     */
     public boolean hasExpired() {
-        return System.currentTimeMillis() - this.expire >= 1;
+        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Get the seconds remaining of the {@link Cooldown}
+     *
+     * @return {@link Long}
+     */
     public int getSecondsLeft() {
-        return (int) getRemaining() / 1000;
+        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
+    /**
+     * Cancel the {@link Cooldown}
+     */
     public void cancel() {
-        this.expire = 0;
+        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

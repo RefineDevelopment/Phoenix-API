@@ -7,7 +7,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum FilterType {
     WORD("Word"),
-    REGEX("Regex");
+    REGEX("Regex"),
+    CONTAINS("Contains");
 
     private final String displayName;
 }

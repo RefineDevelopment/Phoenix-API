@@ -1,39 +1,57 @@
 package xyz.refinedev.phoenix.profile.log;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import org.jetbrains.annotations.NotNull;
 import xyz.refinedev.phoenix.utils.Expirable;
 
 import java.util.UUID;
 
 /**
- * This Project is the property of Phoenix Development © 2022
+ * This Project is the property of Refine Development © 2023
  * Redistribution of this Project is not allowed
  *
  * @author Creaxx
- * @since 06/12/2022
- * Project: pxCore
+ * Created At: 06/12/2022
+ * Project: Phoenix
  */
 
 @Getter
 @Setter
 public class Logable extends Expirable {
 
-    public UUID uuid = UUID.randomUUID();
-    public UUID target, issuedBy, removedBy;
-    public String issuedOn, removedOn;
-    public String reason, removedReason;
+    @SerializedName("_id")
+    private UUID uuid = UUID.randomUUID();
+    private UUID target, issuedBy, removedBy;
+    private String issuedOn, removedOn;
+    private String reason, removedReason;
 
-    public String getNiceIssuedBy() {
+    /**
+     * Get the Colored Name of the Issuer
+     *
+     * @return {@link String} Colored Name
+     */
+    public @NotNull String getNiceIssuedBy() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getNiceRemovedBy() {
+    /**
+     * Get the Colored Name of the Remover
+     *
+     * @return {@link String} Colored Name
+     */
+    public @NotNull String getNiceRemovedBy() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public String getNiceTarget() {
+    /**
+     * Get the Colored Name of the Target
+     *
+     * @return {@link String} Colored Name
+     */
+    public @NotNull String getNiceTarget() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

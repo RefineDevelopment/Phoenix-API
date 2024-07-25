@@ -16,9 +16,9 @@ import xyz.refinedev.phoenix.profile.punishment.PunishmentType;
 public class PunishmentLadderType {
     private final int order;
 
-    private final PunishmentType type;
-    private final long duration;
-    private final boolean ip;
-    private final boolean shadow;
+    private PunishmentType type;
+    private long duration;
+    private boolean ip;
+    private boolean shadow;
 
 }

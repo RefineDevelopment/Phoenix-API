@@ -7,13 +7,15 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum PunishmentType {
 
-    BAN("Bans", "banned", "unbanned"), BLACKLIST("Blacklists", "blacklisted", "unblacklisted"),
-    MUTE("Mutes", "muted", "unmuted"),
-    KICK("Kicks", "kicked", ""),
-    COMPETITIVE("Competitive Bans", "competitive banned", "competitive unbanned"),
-    WARN("Warns", "warned", "unwarned");
+    BAN("Bans", "Ban", "banned", "unbanned"),
+    BLACKLIST("Blacklists", "Blacklist","blacklisted", "unblacklisted"),
+    MUTE("Mutes", "Mute","muted", "unmuted"),
+    KICK("Kicks", "Kick", "kicked", ""),
+    COMPETITIVE("Competitive Bans", "Competitive Ban", "competitive banned", "competitive unbanned"),
+    WARN("Warns", "Warn", "warned", "unwarned");
 
     private final String name;
+    private final String niceName;
     private final String punished;
     private final String removed;
 }
