@@ -35,5 +35,10 @@ public class Phoenix {
     private MenuHandler menuHandler;
     private DiscordHandler discordHandler;
 
+    /**
+     * THIS IS A PROXY ONLY HANDLER!
+     */
+    private AntiVPNHandler antiVPNHandler;
+
     private final List<PlayerSettings> playerSettings = new ArrayList<>();
 }

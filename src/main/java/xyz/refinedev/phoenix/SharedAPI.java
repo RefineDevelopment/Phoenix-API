@@ -50,6 +50,7 @@ public class SharedAPI {
     private LoginHandler loginHandler;
     private NotificationHandler notificationHandler;
     private HashHandler hashHandler;
+    private ChatLogHandler chatLogHandler;
 
     private long startedAt;
     private long stoppedAt;
