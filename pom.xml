@@ -14,7 +14,7 @@
 
     <groupId>xyz.refinedev.phoenix</groupId>
     <artifactId>pxAPI</artifactId>
-    <version>1.7.5</version>
+    <version>1.7.5.1</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -24,12 +24,28 @@
 
     <repositories>
         <repository>
+            <id>bungeecord-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+        <repository>
             <id>refine-public</id>
             <url>https://maven.refinedev.xyz/repository/public-repo/</url>
         </repository>
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.velocitypowered</groupId>
+            <artifactId>velocity-api</artifactId>
+            <version>3.2.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-api</artifactId>
+            <version>1.18-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
