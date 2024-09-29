@@ -60,3 +60,5 @@ manifest.mf
 
 working-dir/
 /.idea/
+/.mvn/maven.config
+/.mvn/settings.xml
