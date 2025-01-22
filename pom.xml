@@ -14,7 +14,7 @@
 
     <groupId>xyz.refinedev.phoenix</groupId>
     <artifactId>pxAPI</artifactId>
-    <version>1.8</version>
+    <version>1.8.6</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

@@ -18,17 +18,19 @@ import org.bukkit.entity.Player;
 public abstract class ChatChannelType {
     public abstract String getName();
 
-    public abstract boolean canUse(Player player);
+    public abstract boolean canSendMessage(Player player);
 
     public abstract int getPriority();
 
     public abstract String getFormat();
 
-    public abstract boolean acceptRecipient(Player player, Player other);
+    public abstract boolean canReceiveMessage(Player sender, Player receiver);
 
-    public boolean isStaff() {
+    public boolean isGlobal() {
         return false;
     }
+
+    public String getPermission() { return null; }
 
     public String getQuickAccessPrefix() {
         return null;
