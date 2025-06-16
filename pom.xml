@@ -76,7 +76,7 @@
 
 
     <build>
-        <finalName>pxAPI</finalName>
+        <finalName>pxAPI-${version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
