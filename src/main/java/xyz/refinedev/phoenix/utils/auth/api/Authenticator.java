@@ -8,16 +8,20 @@ import org.bukkit.entity.Player;
  */
 public interface Authenticator {
 
-    public String getName();
+    String getName();
 
-    public void setup(Player player);
+    void setup(Player player);
 
-    public boolean authenticate(Player player, String input);
+    boolean authenticate(Player player, String input);
 
-    public boolean canSetup(Player player);
+    boolean canSetup(Player player);
 
-    public boolean canAuthenticate(Player player);
+    boolean canAuthenticate(Player player);
 
-    public boolean isEnabled();
+    boolean isEnabled();
+
+    default boolean isAsync() {
+        return false;
+    }
 
 }

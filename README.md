@@ -1,4 +1,4 @@
-# Phoenix-API (Version: 1.8.6)
+# Phoenix-API (Version: 1.8.12)
 This is the API for Phoenix & pxQueue!
 
 ## Installing
@@ -27,7 +27,7 @@ Add this to your `pom.xml` under `<dependencies>`:
 <dependency>
     <groupId>xyz.refinedev.phoenix</groupId>
     <artifactId>pxAPI</artifactId>
-    <version>1.8.6</version>
+    <version>1.8.12</version>
     <scope>provided</scope>
 </dependency>
 ```
