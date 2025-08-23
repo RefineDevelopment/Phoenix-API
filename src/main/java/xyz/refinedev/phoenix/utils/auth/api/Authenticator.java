@@ -24,4 +24,8 @@ public interface Authenticator {
         return false;
     }
 
+    default boolean isRequireCode() {
+        return true;
+    }
+
 }

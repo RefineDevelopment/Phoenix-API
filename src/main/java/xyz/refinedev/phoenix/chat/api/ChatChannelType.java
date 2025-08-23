@@ -11,7 +11,7 @@ import java.util.UUID;
  * Redistribution of this Project is not allowed
  *
  * @author Creaxx
- * @since 8/26/2022
+ * Created At: 8/26/2022
  * Project: Phoenix
  */
 
@@ -30,6 +30,10 @@ public abstract class ChatChannelType {
 
     public boolean isGlobal() {
         return false;
+    }
+
+    public boolean isStaff() {
+        return isGlobal();
     }
 
     public String getPermission() { return null; }

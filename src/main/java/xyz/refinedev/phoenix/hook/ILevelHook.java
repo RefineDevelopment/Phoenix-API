@@ -1,36 +1,36 @@
 package xyz.refinedev.phoenix.hook;
 
-import xyz.refinedev.phoenix.profile.Profile;
+import xyz.refinedev.phoenix.profile.IProfile;
 
 import java.util.UUID;
 
 /**
- * This Project is the property of Phoenix Development © 2022
+ * This Project is the property of Refine Development © 2023
  * Redistribution of this Project is not allowed
  *
  * @author Creaxx
- * @since 8/30/2022
- * Project: pxCore
+ * Created At: 8/30/2022
+ * Project: Phoenix
  */
 
 public interface ILevelHook {
 
-    void addExperience(Profile profile, int amount, String reason);
+    void addExperience(IProfile profile, int amount, String reason);
 
-    void removeExperience(Profile profile, int amount);
+    void removeExperience(IProfile profile, int amount);
 
-    void setExperience(Profile profile, int amount);
+    void setExperience(IProfile profile, int amount);
 
-    void openLevelMenu(UUID player, Profile profile);
+    void openLevelMenu(UUID player, IProfile profile);
 
-    String getLevelNameWithColor(Profile profile);
+    String getLevelNameWithColor(IProfile profile);
 
     String getLevelNameWithColor(int exp);
 
-    String getLevelDisplayName(Profile profile);
+    String getLevelDisplayName(IProfile profile);
 
     String getLevelDisplayName(int exp);
 
-    int getExperience(Profile profile);
+    int getExperience(IProfile profile);
 
 }

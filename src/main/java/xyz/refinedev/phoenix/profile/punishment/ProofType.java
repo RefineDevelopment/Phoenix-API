@@ -2,7 +2,6 @@ package xyz.refinedev.phoenix.profile.punishment;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import org.bukkit.plugin.IllegalPluginAccessException;
 
 /**
  * @author Creaxx
@@ -19,7 +18,9 @@ public enum ProofType {
     private final String niceName;
 
     public static ProofType getByName(String name) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
+        if (name.equalsIgnoreCase("snapshot") || name.equalsIgnoreCase("chatsnapshot") || name.equalsIgnoreCase("chat"))
+            return CHAT_SNAPSHOT;
+        return LINK;
     }
 
 }

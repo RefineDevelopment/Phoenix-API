@@ -2,12 +2,15 @@ package xyz.refinedev.phoenix.handler;
 
 import lombok.Getter;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import xyz.refinedev.phoenix.profile.Profile;
-import xyz.refinedev.phoenix.profile.disguise.DisguiseData;
-import xyz.refinedev.phoenix.profile.disguise.DisguiseHistory;
-import xyz.refinedev.phoenix.profile.disguise.Skin;
+import xyz.refinedev.phoenix.Phoenix;
+import xyz.refinedev.phoenix.profile.IProfile;
+import xyz.refinedev.phoenix.profile.disguise.IDisguiseData;
+import xyz.refinedev.phoenix.profile.disguise.IDisguiseHistory;
+import xyz.refinedev.phoenix.profile.disguise.ISkin;
+import xyz.refinedev.phoenix.repository.IDisguiseHistoryRepository;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
@@ -19,24 +22,33 @@ import java.util.concurrent.CompletableFuture;
 
 @Getter
 public class DisguiseHandler {
-    /**
-     * Disguise a {@link Profile}
-     *
-     * @param profile      {@link Profile} Profile
-     * @param disguiseData {@link DisguiseData} Disguise Data
-     * @param redisguise   {@link Boolean} Redisguise
-     */
-    public void disguise(Profile profile, DisguiseData disguiseData, boolean redisguise) {
+    private final IDisguiseHistoryRepository historyRepository;
+    private final Phoenix plugin;
+
+    private final Random random = new Random();
+
+    public DisguiseHandler(Phoenix plugin) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
     /**
-     * Undisguise a  {@link Profile}
+     * Disguise a {@link IProfile}
      *
-     * @param profile {@link Profile} Profile
+     * @param profile      {@link IProfile} Profile
+     * @param disguiseData {@link IDisguiseData} Disguise Data
+     * @param redisguise   {@link Boolean} Redisguise
+     */
+    public void disguise(IProfile profile, IDisguiseData disguiseData, boolean redisguise) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    /**
+     * Undisguise a  {@link IProfile}
+     *
+     * @param profile {@link IProfile} Profile
      * @param cache   {@link Boolean} Remove Disguise from Cache
      */
-    public void undisguise(Profile profile, boolean cache) {
+    public void undisguise(IProfile profile, boolean cache) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -50,12 +62,12 @@ public class DisguiseHandler {
     }
 
     /**
-     * Get a {@link Skin} by Name
+     * Get a {@link ISkin} by Name
      *
      * @param name {@link String} Name
      * @return Skin
      */
-    public CompletableFuture<Skin> getSkinByName(String name) {
+    public CompletableFuture<ISkin> getSkinByName(String name) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -65,7 +77,7 @@ public class DisguiseHandler {
      * @param uuid {@link UUID} Profile UUID
      * @return Disguise History
      */
-    public CompletableFuture<List<DisguiseHistory>> fetchDisguiseHistory(UUID uuid) {
+    public CompletableFuture<List<IDisguiseHistory>> fetchDisguiseHistory(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -81,9 +93,9 @@ public class DisguiseHandler {
     /**
      * Get a Random Skin for Disguise
      *
-     * @return {@link Skin} Random Skin
+     * @return {@link ISkin} Random Skin
      */
-    public Skin getRandomSkin() {
+    public ISkin getRandomSkin() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -120,9 +132,9 @@ public class DisguiseHandler {
     /**
      * Get a list of disguised profiles
      *
-     * @return {@link List<Profile>}
+     * @return {@link List<IProfile>}
      */
-    public List<Profile> getAllDisguisedProfiles() {
+    public List<IProfile> getAllDisguisedProfiles() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -140,9 +152,9 @@ public class DisguiseHandler {
      * Cache Previous Disguise Data
      *
      * @param uuid {@link UUID}
-     * @param data {@link DisguiseData}
+     * @param data {@link IDisguiseData}
      */
-    public void updatePreviousDisguiseData(UUID uuid, DisguiseData data) {
+    public void updatePreviousDisguiseData(UUID uuid, IDisguiseData data) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -150,9 +162,9 @@ public class DisguiseHandler {
      * Get a Profile's previous Disguise Data
      *
      * @param uuid {@link UUID} UUID
-     * @return {@link DisguiseData} Disguise Data
+     * @return {@link IDisguiseData} Disguise Data
      */
-    public DisguiseData getPreviousDisguiseData(UUID uuid) {
+    public IDisguiseData getPreviousDisguiseData(UUID uuid) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 

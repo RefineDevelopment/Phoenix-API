@@ -1,4 +1,4 @@
-# Phoenix-API (Version: 1.8.12)
+# Phoenix-API (Version: 2.0)
 This is the API for Phoenix & pxQueue!
 
 ## Installing
@@ -27,7 +27,7 @@ Add this to your `pom.xml` under `<dependencies>`:
 <dependency>
     <groupId>xyz.refinedev.phoenix</groupId>
     <artifactId>pxAPI</artifactId>
-    <version>1.8.12</version>
+    <version>2.0</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -35,14 +35,14 @@ Add this to your `pom.xml` under `<dependencies>`:
 ## Usage
 To access PhoenixAPI, you can use these two methods
 
-For global (non-bukkit specific) stuff such as profiles, ranks, punishments, etc... use:
-```java
-SharedAPI api = SharedAPI.getInstance();
-```
-
-For bukkit specific features such as RebootHandler, ChatHandler, etc... use:
+For all the api features such as RankHandler, ProfileHandler, RebootHandler, ChatHandler, etc... use:
 ```java
 Phoenix phoenix = Phoenix.getInstance();
+```
+
+If you want all the handlers that are global, meaning Bukkit, Bungee & Velocity you can also do
+```java
+CommonPlatform platform = PlatformGetter.getInstance();
 ```
 
 To access QueueAPI, you can use:
@@ -54,7 +54,7 @@ Example usage of PhoenixAPI
 
 Getting a player's highest rank:
 ```java
-SharedAPI api = SharedAPI.getInstance();
+Phoenix plugin = Phoenix.getInstance();
 Profile profile = api.getProfileHandler().getProfile(UUID.fromString("447e2ed3-1cf5-4e73-9160-e3c5e195ed7d"));
 if (profile != null) {
     player.sendMessage(profile.getName() + "'s highest rank is " + profile.getHighestRank().getName());    

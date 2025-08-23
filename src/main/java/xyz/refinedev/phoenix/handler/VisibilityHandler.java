@@ -1,9 +1,12 @@
 package xyz.refinedev.phoenix.handler;
 
+import lombok.Getter;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 import xyz.refinedev.phoenix.visibility.IVisibilityAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -12,7 +15,10 @@ import java.util.UUID;
  * Created At: 5/31/2023
  */
 
+@Getter
 public class VisibilityHandler {
+    private final List<IVisibilityAdapter> adapters = new ArrayList<>();
+
     /**
      * Add a {@link IVisibilityAdapter}
      *

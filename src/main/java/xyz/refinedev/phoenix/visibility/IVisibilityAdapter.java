@@ -10,6 +10,10 @@ import java.util.UUID;
  */
 public interface IVisibilityAdapter {
 
+    default boolean isOther() {
+        return true;
+    }
+
     boolean canSee(Player player, Player other);
     boolean canSee(UUID player, UUID other);
 }

@@ -7,8 +7,8 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import xyz.refinedev.phoenix.chat.api.ChatChannelType;
-import xyz.refinedev.phoenix.profile.Profile;
-import xyz.refinedev.phoenix.profile.tag.Tag;
+import xyz.refinedev.phoenix.profile.IProfile;
+import xyz.refinedev.phoenix.profile.tag.ITag;
 
 import java.util.List;
 
@@ -102,24 +102,24 @@ public class BukkitAPI {
     }
 
     /**
-     * Does the {@link Player} have access to the {@link Tag}
+     * Does the {@link Player} have access to the {@link ITag}
      *
      * @param player {@link Player} Player
-     * @param tag    {@link Tag} Tag
+     * @param tag    {@link ITag} Tag
      * @return {@link Boolean} Has Tag
      */
-    public boolean hasTag(Player player, Tag tag) {
+    public boolean hasTag(Player player, ITag tag) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
     /**
      * Send a Message on a Staff Channel
      *
-     * @param profile     {@link Profile} Profile
+     * @param profile     {@link IProfile} Profile
      * @param channelType {@link ChatChannelType} Channel
      * @param message     {@link String} Message
      */
-    public void sendSomeStaffMessage(Profile profile, ChatChannelType channelType, String message) {
+    public void sendSomeStaffMessage(IProfile profile, ChatChannelType channelType, String message) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -137,9 +137,9 @@ public class BukkitAPI {
      * Get a Profile by Name
      *
      * @param name {@link String} Name
-     * @return {@link Profile} Profile
+     * @return {@link IProfile} Profile
      */
-    public @Nullable Profile getProfileByName(String name) {
+    public @Nullable IProfile getProfileByName(String name) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

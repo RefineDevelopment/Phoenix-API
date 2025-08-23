@@ -3,13 +3,11 @@ package xyz.refinedev.phoenix.handler;
 import lombok.Getter;
 import org.bukkit.plugin.IllegalPluginAccessException;
 import org.jetbrains.annotations.Nullable;
+import xyz.refinedev.phoenix.Phoenix;
 import xyz.refinedev.phoenix.utils.auth.api.Authenticator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Creaxx
@@ -19,8 +17,10 @@ import java.util.concurrent.ConcurrentHashMap;
 @Getter
 public class AuthHandler {
     private final List<Authenticator> authenticators = new ArrayList<>();
-    private final Map<UUID, Integer> authAttempts = new ConcurrentHashMap<>();
 
+    public AuthHandler(Phoenix plugin) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
 
     /**
      * Get an {@link Authenticator} by its Type

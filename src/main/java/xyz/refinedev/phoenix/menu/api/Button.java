@@ -1,68 +1,12 @@
 package xyz.refinedev.phoenix.menu.api;
 
 import lombok.Getter;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.IllegalPluginAccessException;
-
-import java.util.List;
 
 @Getter
 public abstract class Button {
-
-    /**
-     * Create a quick and easy placeholder Button
-     */
-    public static Button placeholder(Material material, byte data, String... title) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public static Button placeholder(Material material, byte data, String title, List<String> lore) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public static Button placeholder() {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-
-    public static Button placeholder(ItemStack itemStack) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    public static Button placeholder(Material itemStack) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    /**
-     * Play a fail sound upon clicking
-     *
-     * @param player {@link Player} hearing the sound
-     */
-    public static void playFail(Player player) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    /**
-     * Play a successful sound upon clicking
-     *
-     * @param player {@link Player} hearing the sound
-     */
-    public static void playSuccess(Player player) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    /**
-     * Play a neutral sound upon clicking
-     *
-     * @param player {@link Player} hearing the sound
-     */
-    public static void playNeutral(Player player) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
     /**
      * Get itemStack of the Button
      *
@@ -79,7 +23,6 @@ public abstract class Button {
      * @param clickType {@link ClickType}
      */
     public void clicked(Player player, ClickType clickType) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
     /**
@@ -92,7 +35,6 @@ public abstract class Button {
      * @param hotbarSlot the hotbar slot of the player
      */
     public void clicked(Player player, int slot, ClickType clickType, int hotbarSlot) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
     /**
@@ -103,7 +45,7 @@ public abstract class Button {
      * @return {@link Boolean}
      */
     public boolean shouldCancel(Player player, ClickType clickType) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
+        return true;
     }
 
     /**
@@ -114,7 +56,7 @@ public abstract class Button {
      * @return {@link Boolean}
      */
     public boolean shouldUpdate(Player player, ClickType clickType) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
+        return false;
     }
 
 }

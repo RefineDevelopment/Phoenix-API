@@ -4,8 +4,8 @@ import lombok.experimental.UtilityClass;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import xyz.refinedev.phoenix.profile.Profile;
-import xyz.refinedev.phoenix.server.ServerData;
+import xyz.refinedev.phoenix.profile.IProfile;
+import xyz.refinedev.phoenix.server.IServerData;
 import xyz.refinedev.phoenix.utils.Pair;
 
 import java.util.List;
@@ -66,10 +66,10 @@ public class BungeeAPI {
      * Get a Result for if a Profile can
      * join with current whitelist settings
      *
-     * @param profile {@link Profile} Profile
+     * @param profile {@link IProfile} Profile
      * @return {@link Pair<Boolean, String>} Can Join, Kick Message
      */
-    public Pair<Boolean, String> canJoinWhitelist(Profile profile) {
+    public Pair<Boolean, String> canJoinWhitelist(IProfile profile) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
@@ -78,11 +78,11 @@ public class BungeeAPI {
      * Get a Result for if a Profile can join
      * a server with current whitelist settings
      *
-     * @param profile    {@link Profile} Profile
-     * @param serverData {@link ServerData} Server
+     * @param profile    {@link IProfile} Profile
+     * @param serverData {@link IServerData} Server
      * @return {@link Boolean} Can Join
      */
-    public boolean canJoinWhitelist(Profile profile, ServerData serverData) {
+    public boolean canJoinWhitelist(IProfile profile, IServerData serverData) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 

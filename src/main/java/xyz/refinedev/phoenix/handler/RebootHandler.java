@@ -3,6 +3,7 @@ package xyz.refinedev.phoenix.handler;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import xyz.refinedev.phoenix.Phoenix;
 
 /**
  * @author Creaxx
@@ -11,6 +12,8 @@ import org.bukkit.plugin.IllegalPluginAccessException;
 
 @RequiredArgsConstructor
 public class RebootHandler {
+    private final Phoenix plugin;
+
     /**
      * Reboot the server
      *

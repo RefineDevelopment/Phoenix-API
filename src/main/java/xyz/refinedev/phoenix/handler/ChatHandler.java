@@ -5,10 +5,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.IllegalPluginAccessException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import xyz.refinedev.phoenix.Phoenix;
 import xyz.refinedev.phoenix.chat.api.ChatChannelType;
 import xyz.refinedev.phoenix.chat.api.ChatLimitation;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,9 +18,14 @@ import java.util.List;
 
 @Getter
 public class ChatHandler {
-    private final List<ChatChannelType> chatChannels = new ArrayList<>();
-    private final List<ChatLimitation> chatLimitations = new ArrayList<>();
-    private List<ChatLimitation> sortedChatLimitations = new ArrayList<>();
+    private final List<ChatChannelType> chatChannels;
+    private final List<ChatLimitation> chatLimitations;
+    private List<ChatLimitation> sortedChatLimitations;
+    private final Phoenix plugin;
+
+    public ChatHandler(Phoenix plugin) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
 
     /**
      * Get a {@link ChatChannelType} by its Quick Access
@@ -94,6 +99,16 @@ public class ChatHandler {
     }
 
     /**
+     * Get a {@link ChatChannelType} by Name
+     *
+     * @param name {@link String} Name
+     * @return {@link ChatChannelType}
+     */
+    public @Nullable ChatChannelType getNullableChannelByName(String name) {
+        throw new IllegalPluginAccessException("You need to install the plugin.");
+    }
+
+    /**
      * Add a {@link ChatLimitation}
      *
      * @param chatLimitation {@link ChatLimitation} Chat Limitation
@@ -109,13 +124,6 @@ public class ChatHandler {
      * @return {@link ChatLimitation}
      */
     public @Nullable ChatLimitation getLimitationByName(String name) {
-        throw new IllegalPluginAccessException("You need to install the plugin.");
-    }
-
-    /**
-     * Sort Chat Limitations
-     */
-    public void sortChatLimitations() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }
