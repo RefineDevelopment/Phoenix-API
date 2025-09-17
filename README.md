@@ -1,4 +1,4 @@
-# Phoenix-API (Version: 2.0)
+# Phoenix API (Version: 2.0)
 This is the API for Phoenix & pxQueue!
 
 ## Installing
