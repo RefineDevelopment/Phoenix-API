@@ -5,7 +5,7 @@ This is the API for Phoenix & pxQueue!
 You can either shade this repository into your plugin, or run it as a plugin by itself.
 
 1. Clone this repository
-2. Enter the directory: `cd Phoenix-API`
+2. Enter the directory: `cd PhoenixAPI`
 3. Build & install with Maven: `mvn clean install`
 
 OR
